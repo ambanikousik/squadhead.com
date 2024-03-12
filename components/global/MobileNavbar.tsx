@@ -2,11 +2,11 @@ import { useEffect, useState } from "react";
 
 import Link from "next/link";
 import {routes} from "@/data/global";
-import useDelayedRender from "use-delayed-render";
+import UseDelayedRender from "../utility/DelayedResponse";
 
 export default function MobileNavbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const { mounted: isMenuMounted, rendered: isMenuRendered } = useDelayedRender(
+  const { mounted: isMenuMounted, rendered: isMenuRendered } = UseDelayedRender(
     isMenuOpen,
     {
       enterDelay: 20,

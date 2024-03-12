@@ -21,7 +21,6 @@
       "@/lib/*": ["lib/*"],
       "@/styles/*": ["styles/*"],
       "@/utils/*": ["utils/*"],
-      "contentlayer/generated": ["./.contentlayer/generated"]
     }
   },
   "include": [
